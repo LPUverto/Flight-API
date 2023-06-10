@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flight Price API</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Flight Price API</h1>
+  </header>
+
+  <main>
+    <div class="search-form">
+      <label for="source">Source:</label>
+      <input type="text" id="source" placeholder="Enter source city">
+
+      <label for="destination">Destination:</label>
+      <input type="text" id="destination" placeholder="Enter destination city">
+
+      <label for="date">Date:</label>
+      <input type="date" id="date">
+
+      <button onclick="getFlightPrices()">Search</button>
+    </div>
+
+    <div id="flightPrices"></div>
+    <div id="errorMessage"></div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="logo.png" alt="Flight Price API Logo">
+      <p>Flight Price API by Your Company</p>
+    </div>
+  </footer>
+</body>
+</html>
